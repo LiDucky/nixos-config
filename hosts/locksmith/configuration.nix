@@ -52,12 +52,6 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.nina = {
-    isNormalUser = true;
-    description = "Nina Vroom";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

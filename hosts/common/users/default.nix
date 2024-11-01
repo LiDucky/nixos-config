@@ -1,0 +1,3 @@
+{
+  imports = [./nina.nix];
+}

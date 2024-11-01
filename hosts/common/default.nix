@@ -5,6 +5,10 @@
   outputs,
   ...
 }: {
+  imports = [
+    ./users
+    inputs.home-manager.nixosModules.home-manager
+  ];
   nixpkgs = {
     # You can add overlays here
     overlays = [
