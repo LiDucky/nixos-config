@@ -25,6 +25,6 @@
     # ];
     packages = [inputs.home-manager.packages.${pkgs.system}.default];
   };
-  home-manager.users.m3tam3re =
+  home-manager.users.nina =
     import ../../../home/nina/${config.networking.hostName}.nix;
 }
