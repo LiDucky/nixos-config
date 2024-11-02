@@ -57,5 +57,5 @@
       ((lib.filterAttrs (_: lib.isType "flake")) inputs);
     nixPath = ["/etc/nix/path"];
   };
-  users.defaultUserSell = pkgs.fish;
+  users.defaultUserShell = pkgs.fish;
 }
