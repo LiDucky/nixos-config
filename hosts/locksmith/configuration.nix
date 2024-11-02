@@ -14,7 +14,7 @@
   # boot.loader.grub.enable = true;
   # boot.loader.grub.device = "/dev/vda";
   # boot.loader.grub.useOSProber = true;
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = true; # TODO: switch to grub later?
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "locksmith"; # Define your hostname.
@@ -85,6 +85,9 @@
     enable = true;
     xwayland.enable = true;
   };
+
+  programs.fish.enable = true;
+  
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

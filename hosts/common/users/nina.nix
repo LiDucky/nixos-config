@@ -20,7 +20,7 @@
       "kvm"
       "qemu-libvirtd"
     ];
-    # openssh.authorizedKeys.keys = [
+    # openssh.authorizedKeys.keys = [ # TODO: generate later
     #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDSozjLMbQ91RqPOtnO04OFio4PIC6nkgekbTK6e+5JV username@hostname"
     # ];
     packages = [inputs.home-manager.packages.${pkgs.system}.default];
