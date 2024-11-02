@@ -2,7 +2,7 @@
   imports = [
     ./fish.nix
   ];
-  
+
   programs.zoxide = {
     enable =true;
     enableFishIntegration = true;
@@ -15,7 +15,7 @@
     extraOptions = ["-l" "--icons" "--git" "-a"];
   };
 
-  programs.bat = {enable = true};
+  programs.bat = {enable = true;};
 
   home.packages = with pkgs; [
     coreutils
